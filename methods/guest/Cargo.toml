@@ -1,0 +1,13 @@
+[package]
+name = "method"
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+
+[dependencies]
+# If you want to try (experimental) std support, add `features = [ "std" ]` to risc0-zkvm
+risc0-zkvm = { version = "0.21.0", default-features = false, features = ["std"] }
+ibc = { version = "0.51.0", default-features = true }
+ibc-testkit = { version = "0.51.0", default-features = true }
+parking_lot = "*"
